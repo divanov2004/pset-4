@@ -46,20 +46,21 @@ Work through these exercises on your own. Experiment, make mistakes, ask questio
 
 ### Exercise 1
 
-Prompt the user to enter two integers. The first integer is a lower bound, and the second integer is an upper bound. Compute the sum of all even integers between the lower and upper bounds, including the bounds themselves.
+Prompt the user to enter two integers, a lower bound and an upper bound. Compute the sum of all even integers between these bounds.
 
-Your code needs to support all numbers in the range [`Number.MIN_SAFE_INTEGER`, `Number.MAX_SAFE_INTEGER`], and should reject anything not in this range. The lower bound, of course, must be less than the upper bound. Continuously prompt the user until you receive a value in the supported range.
+Your code needs to support all integers in the range [`Number.MIN_SAFE_INTEGER`, `Number.MAX_SAFE_INTEGER`]. Integers outside of this range, numbers with decimal components, and non-numeric values are invalid. Continuously prompt the user until you receive two valid bound.
 
 ![Exercise 1 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/sum.png)
 
 * Your code must be written in a file named `sum.js`.
+* The lower bound cannot be greater than the upper bound.
 * Your message must be grammatically correct and match mine **exactly**.
 
 ### Exercise 2
 
-Prompt the user to enter a positive integer. Without using any `String` methods, print the digits of this integer in reverse order. Separate each digit with a comma.
+Prompt the user to enter a positive integer. Without using any `String` methods, print the digits of this integer in reverse order (separateing each digit with a comma).
 
-Your code needs to support all numbers in the range [`1`, `Number.MAX_SAFE_INTEGER`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
+Your code needs to support all integers in the range [`1`, `Number.MAX_SAFE_INTEGER`]. Integers outside of this range, numbers with decimal components, and non-numeric values are invalid. Continuously prompt the user until you receive a valid integer.
 
 ![Exercise 2 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/reverse.png)
 
@@ -71,7 +72,7 @@ Your code needs to support all numbers in the range [`1`, `Number.MAX_SAFE_INTEG
 
 Prompt the user to enter a positive integer. Without using any `String` methods, compute the sum of all of the odd digits in the integer.
 
-Your code needs to support all numbers in the range [`Number.MIN_SAFE_INTEGER`, `Number.MAX_SAFE_INTEGER`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
+Your code needs to support all integers in the range [`Number.MIN_SAFE_INTEGER`, `Number.MAX_SAFE_INTEGER`]. Integers outside of this range, numbers with decimal components, and non-numeric values are invalid. Continuously prompt the user until you receive a valid integer.
 
 ![Exercise 3 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/odd.png)
 
@@ -95,7 +96,7 @@ Your code needs to support all numbers in the range [`0`, `Number.MAX_SAFE_INTEG
 
 Prompt the user to enter a non-negative integer. Is this number prime?
 
-Your code needs to support all numbers in the range [`0`, `Number.MAX_SAFE_INTEGER`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
+Your code needs to support all integers in the range [`0`, `Number.MAX_SAFE_INTEGER`]. Integers outside of this range, numbers with decimal components, and non-numeric values are invalid. Continuously prompt the user until you receive a valid integer.
 
 There are two possible outputs.
 * `Prime.`
@@ -110,7 +111,7 @@ There are two possible outputs.
 
 Prompt the user to enter a positive integer. If the integer the user enters is called `n`, what is the `n`th Fibonacci number?
 
-Your code needs to support all numbers in the range [`1`, `78`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
+Your code needs to support all integers in the range [`1`, `78`]. Integers outside of this range, numbers with decimal components, and non-numeric values are invalid. Continuously prompt the user until you receive a value `n` value.
 
 ![Exercise 6 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/fibonacci.png)
 
@@ -122,20 +123,20 @@ Your code needs to support all numbers in the range [`1`, `78`], and should reje
 
 Prompt the user to enter a positive integer. What are its factors? Take note of the order in which factors are printed, and whether or not factors are repeated.
 
-Your code needs to support all numbers in the range [`1`, `Number.MAX_SAFE_INTEGER`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
+Your code needs to support all integers in the range [`1`, `Number.MAX_SAFE_INTEGER`]. Integers outside of this range, numberis with decimal components, and non-numeric values are invalid. Continuously prompt the user until you receive a valid integer.
 
 ![Exercise 7 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/factors.png)
 
 * Your code must be written in a file named `factors.js`.
 * Print factors in paired sequences (smallest, largest, second smallest, second largest, etc.).
-* Print each factor only once (i.e., no duplicatin factors for perfect squares).
+* Print each factor only once (i.e., no duplicate factors for perfect squares).
 * Your prompt and message must be grammatically correct and match mine **exactly**.
 
 ### Exercise 8
 
 Prompt the user to enter an integer. Print a Super Mario-style half-pyramid of the specified height.
 
-Your code needs to support all numbers in the range [`1`, `24`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
+Your code needs to support all integers in the range [`1`, `24`]. Integers outside of this range, numbers with decimal components, and non-numeric values are invalid. Continuously prompt the user until you receive a valid height.
 
 ![Exercise 8 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/mario.png)
 
@@ -146,7 +147,7 @@ Your code needs to support all numbers in the range [`1`, `24`], and should reje
 
 Prompt the user to enter an integer. Print a Super Mario-style full pyramid of the specified height.
 
-Your code needs to support all numbers in the range [`1`, `24`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
+Your code needs to support all integers in the range [`1`, `24`]. Integers outside of this range, numbers with decimal components, and non-numeric values are invalid. Continuously prompt the user until you receive a valid height.
 
 ![Exercise 9 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/luigi.png)
 
@@ -156,6 +157,8 @@ Your code needs to support all numbers in the range [`1`, `24`], and should reje
 ### Exercise 10
 
 Prompt the user to enter a credit card number (not a real one!). According to [Luhn's algorithm](https://www.geeksforgeeks.org/luhn-algorithm/), is the credit card number valid?
+
+Your code needs to support all integers in the range [`1000000000000`, `9999999999999999`]. Integers outside of this range, numbers with decimal components, and non-numeric values are invalid. Continuously prompt the user until you receive a potentially valid (i.e., checkable) credit card number.
 
 Luhn's algorithm works as follows.
 * Multiply every other digit of the card number by two, starting with the second-to-last digit.
