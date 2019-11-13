@@ -1,15 +1,14 @@
 const readlineSync = require("readline-sync");
 
-const userLowerBound = readlineSync.question("\nLower bound: ");
-const userUpperBound = readlineSync.question("Upper bound: ");
+const lowerBound = readlineSync.question("\nLower bound: ");
+const upperBound = readlineSync.question("Upper bound: ");
 
-console.log("Lower bound: " + userUpperBound);
-console.log("Upper bound: " + userLowerBound);
+let evenSum = 0
 
+let MIN = Number.MIN_SAFE_INTEGER;
+let MAX = Number.MAX_SAFE_INTEGER;
 
-
-
-
-
-
-console.log("\n"):
+while (lowerBound > upperBound) {
+  lowerBound = Number(readlineSync.question("Lower bound: "));
+  upperBound = Number(readlineSync.question("Upper bound: "));
+}
