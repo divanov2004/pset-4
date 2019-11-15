@@ -11,7 +11,7 @@ let i = 0;
 do {
    lowerBound = Number(readlineSync.question("Lower bound: "));
    upperBound = Number(readlineSync.question("Upper bound: "));
-} while (lowerBound > upperBound);
+} while (lowerBound >= upperBound || Number.isNaN(lowerBound) || Number.isNaN(upperBound));
 
 if (lowerBound % 2 === 0) {
   for (let i = lowerBound; i <= upperBound; i = i + 2){
@@ -31,4 +31,4 @@ function thousands_separators(num)
     num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     return num_parts.join(".");
   }
-  console.log(thousands_separators("\n" + sum + "."));
+console.log(thousands_separators("\n" + sum + "."));
