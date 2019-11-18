@@ -72,7 +72,7 @@ Your code needs to support all integers in the range [`1`, `Number.MAX_SAFE_INTE
 
 Prompt the user to enter a positive integer. Without using any `String` methods, compute the sum of all of the odd digits in the integer.
 
-Your code needs to support all integers in the range [`Number.MIN_SAFE_INTEGER`, `Number.MAX_SAFE_INTEGER`]. Integers outside of this range, numbers with decimal components, and non-numeric values are invalid. Continuously prompt the user until you receive a valid integer.
+Your code needs to support all integers in the range [`1`, `Number.MAX_SAFE_INTEGER`]. Integers outside of this range, numbers with decimal components, and non-numeric values are invalid. Continuously prompt the user until you receive a valid integer.
 
 ![Exercise 3 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/odd.png)
 
