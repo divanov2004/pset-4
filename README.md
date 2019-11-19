@@ -84,7 +84,7 @@ Your code needs to support all integers in the range [`1`, `Number.MAX_SAFE_INTE
 
 Prompt the user to enter a series of non-negative integers. When the user enters a negative integer, you can assume he or she is done entering values. Discounting the negative integer, what is the average of the values entered?
 
-Your code needs to support all numbers in the range [`0`, `Number.MAX_SAFE_INTEGER`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range (meaning invalid values should be ignored entirely).
+Your code needs to support all integers in the range [`0`, `Number.MAX_SAFE_INTEGER`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range (meaning invalid values should be ignored entirely).
 
 There are a couple corner cases you'll need to handle.
 * A user enters an invalid number that exceeds `Number.MAX_SAFE_INTEGER` after already entering a valid number.
