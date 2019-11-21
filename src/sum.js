@@ -5,6 +5,7 @@ let upperBound = Number(readlineSync.question("Upper bound: "));
 
 const MIN = Number.MIN_SAFE_INTEGER;
 const MAX = Number.MAX_SAFE_INTEGER;
+
 let sum = 0;
 let i = 0;
 
