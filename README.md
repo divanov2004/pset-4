@@ -164,7 +164,7 @@ Your code needs to support all integers in the range [`1`, `24`]. Integers outsi
 
 Prompt the user to enter a credit card number (not a real one!). According to [Luhn's algorithm](https://www.geeksforgeeks.org/luhn-algorithm/), is the credit card number valid?
 
-Your code needs to support all integers in the range [`1000000000000`, `9999999999999999`]. Integers outside of this range, numbers with decimal components, and non-numeric values are invalid. Continuously prompt the user until you receive a potentially valid (i.e., checkable) credit card number.
+Your code needs to support all integers in the range [`1`, `9999999999999999`]. Integers outside of this range, numbers with decimal components, and non-numeric values are invalid. Continuously prompt the user until you receive a potentially valid (i.e., checkable) credit card number.
 
 Luhn's algorithm works as follows.
 * Multiply every other digit of the card number by two, starting with the second-to-last digit.
